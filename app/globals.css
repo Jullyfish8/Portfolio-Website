@@ -52,3 +52,8 @@
 .hero:before{background:radial-gradient(circle at 50% 48%,rgba(255,255,255,.16),transparent 34%)}
 .role-title{font-size:clamp(36px,4.5vw,70px);line-height:.9}
 @media(max-width:800px){.role-title{font-size:clamp(38px,10vw,58px)}}
+
+/* Keep the discipline title, subtitle and specialties on one even rhythm. */
+.role-details{position:absolute;left:50%;top:67%;z-index:4;display:flex;width:max-content;max-width:92%;transform:translateX(-50%);flex-direction:column;align-items:center;gap:24px;text-align:center}
+.role-details .role-title,.role-details .role-copy,.role-details .role-meta{position:static;left:auto;right:auto;top:auto;width:auto;max-width:100%;margin:0;transform:none}
+@media(max-width:800px){.role-details{top:66%;gap:20px;max-width:96%}.role-details .role-meta{display:none}}
