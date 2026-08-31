@@ -39,3 +39,7 @@
 .role-copy{left:50%;right:auto;top:87%;z-index:4;width:max-content;max-width:80%;transform:translateX(-50%);text-align:center}
 .role-meta{left:50%;right:auto;top:96%;z-index:4;width:max-content;max-width:90%;transform:translateX(-50%);text-align:center}
 @media(max-width:800px){.hero-stage{height:54vh;min-height:410px}.role-orbit{width:min(68vw,330px);top:42%}.role-title{left:50%;top:66%;max-width:96%;font-size:clamp(48px,13vw,76px);transform:translateX(-50%);white-space:normal}.role-copy{left:50%;right:auto;top:88%;bottom:auto;max-width:88%;transform:translateX(-50%)}.role-meta{display:none}}
+
+/* White hero typography across every rotating color world. */
+.hero{color:#fff}
+.hero-heading h1,.hero-heading p,.role-title,.role-copy,.role-meta,.resume-link{color:#fff;text-shadow:0 2px 16px rgba(20,14,64,.22)}
