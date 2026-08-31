@@ -23,7 +23,7 @@
 .hero{min-height:100vh;padding-top:104px}
 .hero-heading{margin:0 auto;text-align:center}
 .hero-heading h1{font-weight:400;text-shadow:0 2px 0 rgba(255,255,255,.12)}
-.hero-heading p{margin-top:8px}
+.hero-heading p{margin-top:24px}
 .hero-stage{height:45vh;margin-top:-.5vw}
 .role-orbit{width:min(32vw,455px);top:58%}
 .role-title{top:47%}
