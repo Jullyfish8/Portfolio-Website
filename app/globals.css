@@ -82,3 +82,11 @@
 .side-arrow-left{left:3.5%}.side-arrow-right{right:3.5%}
 .carousel-nav{padding:10px 14px}
 @media(max-width:800px){.glass-placeholder.is-prev{transform:translateX(-38%) rotateY(24deg) scale(.82)}.glass-placeholder.is-next{transform:translateX(38%) rotateY(-24deg) scale(.82)}.side-arrow{top:43%;width:44px;height:44px;font-size:34px}.side-arrow-left{left:8px}.side-arrow-right{right:8px}}
+
+/* Replace abstract dots with explicit discipline labels. */
+.carousel-nav{max-width:min(92vw,690px);padding:5px;border-color:rgba(255,255,255,.28);background:rgba(17,19,41,.76)}
+.carousel-nav div{display:flex;gap:4px}
+.carousel-nav div button{position:relative;width:auto;height:auto;padding:12px 18px;border:0;border-radius:999px;background:transparent;color:rgba(255,255,255,.82);font-size:14px;font-weight:700;line-height:1;white-space:nowrap;transition:.3s background,.3s color,.3s transform}
+.carousel-nav div button:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:currentColor;vertical-align:1px}
+.carousel-nav div button.active{width:auto;border-radius:999px;background:#8054f5;color:#fff;transform:none}
+@media(max-width:800px){.hero-bottom{grid-template-columns:1fr}.primary-cta{justify-self:center}.carousel-nav{grid-column:1;justify-self:center;max-width:100%;overflow-x:auto}.carousel-nav div button{padding:10px 13px;font-size:12px}.carousel-nav div button:before{margin-right:6px}}
