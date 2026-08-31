@@ -43,3 +43,4 @@
 /* White hero typography across every rotating color world. */
 .hero{color:#fff}
 .hero-heading h1,.hero-heading p,.role-title,.role-copy,.role-meta,.resume-link{color:#fff;text-shadow:0 2px 16px rgba(20,14,64,.22)}
+.role-title{letter-spacing:0}
