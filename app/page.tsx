@@ -2,8 +2,8 @@
 import { useEffect, useRef, useState } from 'react';
 
 const roles = [
-  { name:'Research', className:'blue', image:'/research-3d.png', line:'Finding the signal inside the noise.', meta:'Qualitative · Mixed methods', font:'serif' },
-  { name:'UI/UX Design', className:'purple', image:'/uiux-3d.png', line:'Interfaces with clarity, character and purpose.', meta:'Strategy · Systems · Prototyping', font:'sans' },
+  { name:'Research', className:'blue', image:'/research-3d.png', line:'Finding the signal inside the noise.', meta:'Qualitative · Mixed methods', font:'grotesk' },
+  { name:'UI/UX Design', className:'purple', image:'/uiux-3d.png', line:'Interfaces with clarity, character and purpose.', meta:'Strategy · Systems · Prototyping', font:'grotesk' },
   { name:'Instructional Design', className:'pink', image:'/learning-3d.png', line:'Learning experiences that make ideas click.', meta:'Curriculum · Facilitation · Media', font:'grotesk' },
 ];
 const projects = [
