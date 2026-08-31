@@ -97,3 +97,6 @@
 .hero{min-height:calc(100vh - 124px);padding-top:42px}
 #home,#portfolio,#about,#contact{scroll-margin-top:108px}
 @media(max-width:800px){.nav-shell{top:7px;height:58px;display:flex;justify-content:center;padding:5px;margin-bottom:9px;border-radius:19px}.wordmark,.theme-toggle{display:none}.nav-links{display:flex;width:100%;gap:2px;overflow-x:auto;justify-content:space-between;padding:3px}.nav-links a{flex:0 0 auto;padding:9px 11px;font-size:11px}.hero{min-height:calc(100svh - 85px);padding-top:34px}#home,#portfolio,#about,#contact{scroll-margin-top:82px}}
+
+/* Optically center the chevrons within their circular controls. */
+.side-arrow span{display:block;line-height:.72;transform:translateY(-3px)}
