@@ -1,0 +1,3 @@
+import { env } from 'cloudflare:workers';
+import { getChatGPTUser } from '../../../chatgpt-auth';
+export async function POST(request:Request){if(!await getChatGPTUser())return Response.json({error:'Unauthorized'},{status:401});const data=await request.formData(),file=data.get('file');if(!(file instanceof File)||!file.type.startsWith('image/'))return Response.json({error:'Image required'},{status:400});const extension=file.name.split('.').pop()?.replace(/[^a-z0-9]/gi,'').toLowerCase()||'bin',key=`project-${crypto.randomUUID()}.${extension}`;await env.FILES.put(key,file.stream(),{httpMetadata:{contentType:file.type}});return Response.json({url:`/api/files/${key}`,name:file.name});}

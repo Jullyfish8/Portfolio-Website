@@ -1,0 +1,3 @@
+import { env } from 'cloudflare:workers';
+import { getChatGPTUser } from '../../../chatgpt-auth';
+export async function POST(request:Request){if(!await getChatGPTUser())return Response.json({error:'Unauthorized'},{status:401});const data=await request.formData(),file=data.get('file');if(!(file instanceof File)||file.type!=='application/pdf')return Response.json({error:'PDF required'},{status:400});await env.FILES.put('latest-resume.pdf',file.stream(),{httpMetadata:{contentType:'application/pdf',contentDisposition:`attachment; filename="${file.name.replace(/["\\\\]/g,'')}"`},customMetadata:{originalName:file.name}});return Response.json({url:'/api/resume',name:file.name});}
