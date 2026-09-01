@@ -290,3 +290,15 @@
 .contact-email{width:max-content;min-width:0;flex:none;box-shadow:none}
 .contact-section .contact-linkedin{box-shadow:none}
 @media(max-width:560px){.contact-section{min-height:calc(100svh - 18px)}.contact-buttons{flex-direction:column}.contact-email{width:max-content;max-width:100%}.contact-section .contact-linkedin{width:auto}}
+
+/* Four-screen cinematic sticky story. */
+html{scroll-snap-type:y mandatory;scroll-padding-top:0}
+#home,#portfolio,#about,#contact{position:sticky;top:0;height:100svh;min-height:100svh;scroll-snap-align:start;scroll-snap-stop:always;border:2px solid var(--line);border-radius:36px;background-color:var(--paper);box-shadow:0 -18px 48px rgba(17,19,41,.16);isolation:isolate}
+#home{z-index:1;overflow:hidden}
+#portfolio{z-index:2;overflow:hidden;padding:90px 3.5vw 24px}
+#about{z-index:3;overflow:auto;margin:0;padding:90px 26px 26px}
+#contact{z-index:4;overflow:hidden}
+.projects-section .project-console{height:calc(100svh - 116px);min-height:0}
+@supports (animation-timeline:view()){#portfolio,#about,#contact{animation:screen-arrive linear both;animation-timeline:view();animation-range:entry 0% entry 100%}@keyframes screen-arrive{from{transform:translateY(7vh) scale(.985);filter:brightness(.94)}to{transform:translateY(0) scale(1);filter:brightness(1)}}}
+@media(max-width:800px){#home,#portfolio,#about,#contact{height:100svh;min-height:100svh;border-radius:26px}#portfolio{padding:78px 8px 10px;overflow:hidden}.projects-section .project-console{height:calc(100svh - 88px);overflow:auto}#about{padding:78px 14px 16px;overflow-y:auto}#contact{padding-top:76px;overflow-y:auto}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#portfolio,#about,#contact{animation:none!important;transform:none!important;filter:none!important}}
