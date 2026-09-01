@@ -246,3 +246,11 @@
 .sticker-board{grid-column:2;grid-row:2;width:100%;min-height:440px}
 .board-zone-stickers span{font-size:0}.board-zone-stickers span:after{content:"Two copies of each—drag one onto another";font-size:10px}
 @media(max-width:800px){.about-section{grid-template-columns:1fr;grid-template-rows:auto;gap:18px}.about-copy,.about-portrait,.sticker-board{grid-column:1;grid-row:auto}.about-portrait{height:420px}.about-portrait img{object-fit:contain}.sticker-board{min-height:680px}}
+
+/* Portfolio heading and filters live inside the reader frame. */
+.project-console{grid-template-rows:auto minmax(0,1fr)}
+.project-console>.section-heading{grid-column:1/-1;grid-row:1;margin:0;padding:24px 28px;border-bottom:2px solid var(--line);align-items:center;background:color-mix(in srgb,var(--paper) 96%,var(--project) 4%)}
+.project-console>.section-heading h2{font-size:clamp(44px,5.2vw,72px);line-height:.9}
+.project-console>.case-pane{grid-column:1;grid-row:2;min-height:0}
+.project-console>.project-selector{grid-column:2;grid-row:2;min-height:0}
+@media(max-width:800px){.project-console>.section-heading{order:-2;padding:20px 16px}.project-console>.section-heading h2{font-size:clamp(40px,12vw,58px)}.project-console>.project-selector{order:-1}}
