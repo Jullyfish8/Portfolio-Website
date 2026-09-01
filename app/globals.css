@@ -260,3 +260,16 @@
 .nav-links a{transition:background .25s,color .25s,box-shadow .25s}
 .nav-links a.is-active,.dark .nav-links a.is-active{border:1px solid rgba(255,255,255,.92);background:#fff;color:#111329;box-shadow:inset 0 1px 0 #fff,0 8px 20px rgba(17,19,41,.12)}
 .dark .nav-links{border-bottom-color:transparent;background:linear-gradient(to bottom,rgba(255,255,255,.2) 0%,rgba(255,255,255,.09) 68%,rgba(255,255,255,0) 100%)}
+
+/* Compact white Work With Me section. */
+.contact-section{gap:30px;padding:46px 5vw;background:#fff;color:#111329}
+.contact-section .contact-intro h2{max-width:none;font-size:clamp(40px,5.1vw,76px);white-space:nowrap}
+.contact-section .contact-intro p{margin-top:18px;font-size:15px}
+.contact-actions{width:min(100%,900px);display:flex;gap:12px;margin:auto}
+.contact-email{min-width:0;flex:1;display:flex;align-items:center;gap:12px;padding:8px 8px 8px 20px;border:2px solid #111329;border-radius:999px;background:#fff;box-shadow:5px 6px 0 #111329}
+.contact-section .contact-email a{min-width:0;flex:1;overflow:hidden;margin:0;padding:0;border:0;background:none;box-shadow:none;color:#111329;font-size:16px;font-weight:800;text-overflow:ellipsis;white-space:nowrap}
+.contact-email button{padding:11px 18px;border:0;border-radius:999px;background:#111329;color:#fff;font-weight:800;cursor:pointer}
+.contact-section .contact-linkedin{display:flex;align-items:center;justify-content:center;gap:9px;margin:0;padding:13px 24px;border:2px solid #111329;border-radius:999px;background:#fff;color:#111329;box-shadow:5px 6px 0 #111329;font-weight:800;white-space:nowrap}
+.contact-linkedin span{width:25px;height:25px;display:grid;place-items:center;border-radius:50%;background:#111329;color:#fff;font-size:12px}
+@media(max-width:900px){.contact-section{padding:42px 20px}.contact-section .contact-intro h2{white-space:normal}.contact-actions{max-width:620px}}
+@media(max-width:560px){.contact-actions{flex-direction:column}.contact-section .contact-linkedin{width:100%}.contact-email{width:100%}}
