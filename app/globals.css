@@ -119,3 +119,7 @@
 /* Hero actions use the active color world while retaining clear hierarchy. */
 .hero-actions .primary-cta{background:#fff;color:var(--hero1);box-shadow:0 13px 34px rgba(35,22,92,.16)}
 .hero-actions .resume-link{border:1.5px solid #fff;background:transparent;color:#fff;box-shadow:none}
+
+/* Only the central link group carries glass; the header frame stays invisible. */
+.nav-shell{border-color:transparent;background:transparent;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+.wordmark,.theme-toggle{background:transparent;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
