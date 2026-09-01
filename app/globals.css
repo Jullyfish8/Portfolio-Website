@@ -123,3 +123,10 @@
 /* Only the central link group carries glass; the header frame stays invisible. */
 .nav-shell{border-color:transparent;background:transparent;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
 .wordmark,.theme-toggle{background:transparent;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+
+/* Match the desktop action row to the discipline selector's compact width. */
+.carousel-nav,.hero-actions{width:min(92vw,560px)}
+.carousel-nav>div{width:100%}
+.carousel-nav div button{flex:1}
+.hero-actions .primary-cta,.hero-actions .resume-link{padding:14px 20px}
+@media(max-width:800px){.carousel-nav,.hero-actions{width:100%}.carousel-nav div button{flex:0 0 auto}}
