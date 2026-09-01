@@ -115,3 +115,7 @@
 .nav-shell{width:calc(100% - 6px);margin:3px 3px -77px}
 .hero{padding-top:116px}
 @media(max-width:800px){.nav-shell{width:calc(100% - 4px);margin:2px 2px -60px}.hero{padding-top:78px}}
+
+/* Hero actions use the active color world while retaining clear hierarchy. */
+.hero-actions .primary-cta{background:#fff;color:var(--hero1);box-shadow:0 13px 34px rgba(35,22,92,.16)}
+.hero-actions .resume-link{border:1.5px solid #fff;background:transparent;color:#fff;box-shadow:none}
