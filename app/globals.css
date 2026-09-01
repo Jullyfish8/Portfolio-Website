@@ -273,3 +273,6 @@
 .contact-linkedin span{width:25px;height:25px;display:grid;place-items:center;border-radius:50%;background:#111329;color:#fff;font-size:12px}
 @media(max-width:900px){.contact-section{padding:42px 20px}.contact-section .contact-intro h2{white-space:normal}.contact-actions{max-width:620px}}
 @media(max-width:560px){.contact-actions{flex-direction:column}.contact-section .contact-linkedin{width:100%}.contact-email{width:100%}}
+
+/* Mobile board: reserve a complete lower zone for all four questions. */
+@media(max-width:800px){.sticker-board{min-height:880px}.board-divider{top:64%}.board-zone-notes{top:calc(64% + 10px)}.discussion-note{width:39%;min-height:92px}.discussion-note.is-open{width:82%;min-height:145px}.reset-board{bottom:8px}}
