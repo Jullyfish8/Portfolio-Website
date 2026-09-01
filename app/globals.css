@@ -281,3 +281,12 @@
 .contact-actions{padding:16px;border:1px solid rgba(92,75,220,.2);border-radius:30px;background:linear-gradient(120deg,#dff2ff 0%,#eadfff 52%,#ffddec 100%);box-shadow:0 12px 30px rgba(78,59,160,.12)}
 .nav-links a[href="#portfolio"].is-active,.dark .nav-links a[href="#portfolio"].is-active{border-color:#8b6cff;background:#7657f4;color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 8px 22px rgba(91,61,210,.3)}
 @media(max-width:560px){.contact-actions{padding:12px;border-radius:24px}}
+
+/* Full-height color field with a minimal, unboxed contact row. */
+.contact-section{min-height:calc(100vh - 28px);align-content:center;background:linear-gradient(135deg,#dff2ff 0%,#eadfff 52%,#ffddec 100%)}
+.contact-actions{width:auto;display:block;margin:0 auto;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;text-align:center}
+.contact-actions h3{margin:0 0 18px;font-size:20px;letter-spacing:-.02em}
+.contact-buttons{display:flex;align-items:center;justify-content:center;gap:12px}
+.contact-email{width:max-content;min-width:0;flex:none;box-shadow:none}
+.contact-section .contact-linkedin{box-shadow:none}
+@media(max-width:560px){.contact-section{min-height:calc(100svh - 18px)}.contact-buttons{flex-direction:column}.contact-email{width:max-content;max-width:100%}.contact-section .contact-linkedin{width:auto}}
