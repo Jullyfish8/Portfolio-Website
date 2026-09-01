@@ -17,7 +17,7 @@ const stickerBases = [
   {type:'nature',label:'Nature',sprite:['25%','0%']}, {type:'book',label:'Book / Knowledge',sprite:['50%','0%']},
   {type:'ai',label:'AI',sprite:['75%','0%']}, {type:'speech',label:'Speech',sprite:['100%','0%']},
 ];
-const starterStickers = stickerBases.flatMap((base,copy)=>stickerBases.map((item,index)=>({...item,id:`${item.type}-${copy}`,x:5+(index%2)*22+copy%2*5,y:13+Math.floor(index/2)*38+Math.floor(copy/2)*8})));
+const starterStickers = [0,1].flatMap(copy=>stickerBases.map((item,index)=>({...item,id:`${item.type}-${copy}`,x:5+(index%2)*25+copy*6,y:15+Math.floor(index/2)*42+copy*7})));
 const stickerRecipes:Record<string,{type:string,label:string,sprite:string[]}> = {
   'nature+nature':{type:'nature-hub',label:'Nature Hub',sprite:['25%','25%']},
   'book+nature':{type:'learning-sanctuary',label:'Learning Sanctuary',sprite:['50%','25%']},
