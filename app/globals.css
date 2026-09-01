@@ -153,3 +153,11 @@
 .project-console.focus-view{grid-template-columns:1fr}
 .project-console.focus-view .project-selector{display:none}
 @media(max-width:800px){.case-pane{border-right:0}.case-toolbar{align-items:flex-start;padding:14px;gap:10px}.reader-facts{gap:7px;flex-wrap:wrap}.reader-facts>span:not(.reader-badge){font-size:10px}.reader-actions{gap:6px}.reader-actions button{padding:8px 10px;font-size:10px}.reader-actions button:first-child{display:none}}
+
+/* Portfolio type hierarchy: section first, article second, one shared text size. */
+.projects-section{--portfolio-text:16px}
+.section-heading h2{font-size:clamp(52px,6.4vw,84px);line-height:.88}
+.case-reader h3{font-size:clamp(36px,4.5vw,64px);line-height:.96}
+.case-copy>p:not(.copy-label),.copy-label,.case-meta p,.case-meta strong,.reader-facts>span:not(.reader-badge),.reader-badge,.reader-actions button,.project-filters button{font-size:var(--portfolio-text);font-family:Arial,Helvetica,sans-serif}
+.copy-label,.case-meta p,.reader-badge{line-height:1.35}
+@media(max-width:800px){.section-heading h2{font-size:clamp(44px,14vw,64px)}.case-reader h3{font-size:clamp(34px,10vw,50px)}.projects-section{--portfolio-text:14px}}
