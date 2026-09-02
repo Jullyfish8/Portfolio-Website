@@ -321,3 +321,25 @@ body{overflow-x:hidden}
 .project-console>.section-heading h2,.case-reader h3{letter-spacing:-.045em}
 .case-intro{font-family:Arial,Helvetica,sans-serif}
 .case-copy .copy-label{margin:0 0 18px;font-family:Arial,Helvetica,sans-serif;font-size:clamp(27px,3vw,44px);font-weight:700;line-height:1.12;letter-spacing:-.035em;text-transform:capitalize}
+
+/* Align the four main screens and simplify the portfolio surface. */
+.hero,.about-section,.contact-section{width:calc(100% - 7vw);margin-left:3.5vw;margin-right:3.5vw}
+.about-section{margin-top:4vw;margin-bottom:4vw}
+.contact-section{margin-bottom:3.5vw}
+.project-console{box-shadow:none}
+.selector-rail button.active{box-shadow:none}
+.project-console>.section-heading{padding:18px 24px}
+.project-console>.section-heading h2{font-size:clamp(28px,2.7vw,40px);line-height:1;letter-spacing:-.035em}
+.project-filters button{font-size:12px}
+.selector-rail button strong{letter-spacing:.015em}
+.case-pane .case-reader{padding-top:22px}
+.case-reader h3{margin-top:10px}
+.case-visual{border-radius:24px}
+.case-visual img{border-radius:inherit}
+@media(max-width:800px){
+  .hero,.about-section,.contact-section{width:calc(100% - 18px);margin-left:9px;margin-right:9px}
+  .project-console>.section-heading{padding:16px}
+  .project-console>.section-heading h2{font-size:30px}
+  .project-filters button{font-size:11px}
+  .case-pane .case-reader{padding-top:18px}
+}
