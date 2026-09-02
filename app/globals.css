@@ -84,11 +84,11 @@
 @media(max-width:800px){.glass-placeholder.is-prev{transform:translateX(-38%) rotateY(24deg) scale(.82)}.glass-placeholder.is-next{transform:translateX(38%) rotateY(-24deg) scale(.82)}.side-arrow{top:43%;width:44px;height:44px;font-size:34px}.side-arrow-left{left:8px}.side-arrow-right{right:8px}}
 
 /* Replace abstract dots with explicit discipline labels. */
-.carousel-nav{max-width:min(92vw,690px);padding:5px;border-color:transparent;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+.carousel-nav{max-width:min(92vw,690px);padding:5px;border:2px solid #fff;border-radius:999px;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
 .carousel-nav div{display:flex;gap:4px}
-.carousel-nav div button{position:relative;width:auto;height:auto;padding:12px 18px;border:0;border-radius:999px;background:transparent;color:rgba(255,255,255,.82);font-size:14px;font-weight:700;line-height:1;white-space:nowrap;transition:.3s background,.3s color,.3s transform}
+.carousel-nav div button{position:relative;width:auto;height:auto;padding:12px 18px;border:0;border-radius:999px;background:transparent;color:rgba(255,255,255,.82);font-size:16px;font-weight:700;line-height:1;white-space:nowrap;transition:.3s background,.3s color,.3s transform}
 .carousel-nav div button:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:currentColor;vertical-align:1px}
-.carousel-nav div button.active{width:auto;border:2px solid #fff;border-radius:999px;background:var(--hero1);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);transform:none}
+.carousel-nav div button.active{width:auto;border:0;border-radius:999px;background:var(--hero1);color:#fff;box-shadow:none;transform:none}
 @media(max-width:800px){.hero-bottom{grid-template-columns:1fr}.primary-cta{justify-self:center}.carousel-nav{grid-column:1;justify-self:center;max-width:100%;overflow-x:auto}.carousel-nav div button{padding:10px 13px;font-size:12px}.carousel-nav div button:before{margin-right:6px}}
 
 /* Keep navigation outside the hero frame and aware of the current section. */
@@ -303,3 +303,13 @@
 /* Home discipline points use the shared interface typeface. */
 .role-details .role-meta{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:800;line-height:1.35;letter-spacing:.08em}
 @media(max-width:800px){.role-details .role-meta{display:block;font-size:12px}}
+
+/* Keep the framed home screen inside equal left and right breathing room. */
+body{overflow-x:hidden}
+.site-shell{width:100%;max-width:100vw;overflow-x:clip}
+.hero{width:100%;max-width:100%}
+.nav-shell{max-width:calc(100% - 6px)}
+
+/* Bring the discipline control closer to its specialty line. */
+.hero-bottom{margin-top:-32px}
+@media(max-width:800px){.hero-bottom{margin-top:-14px}.carousel-nav div button{font-size:14px}}
