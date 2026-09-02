@@ -211,7 +211,7 @@
 .board-instruction{display:none}
 .interest-sticker{width:82px;min-height:78px;padding:0;border-width:2px;border-radius:16px;background:#fff9ee;overflow:hidden}
 .interest-sticker:before{width:7px;height:7px;top:3px;z-index:2}
-.interest-sticker .sticker-art{display:block;width:100%;height:78px;background-image:url('/sticker-recipes.png');background-repeat:no-repeat;background-size:500% 500%;background-position:var(--sprite-x) var(--sprite-y);pointer-events:none}
+.interest-sticker .sticker-art{display:block;width:100%;height:78px;object-fit:contain;pointer-events:none;user-select:none}
 .interest-sticker small{display:none}
 .discussion-note{position:absolute;z-index:3;width:125px;min-height:92px;padding:24px 13px 13px;border:0;background:#fff29a;color:#332b1f;text-align:left;font:700 11px/1.25 Arial,Helvetica,sans-serif;cursor:grab;touch-action:none;clip-path:polygon(0 0,82% 0,100% 20%,100% 100%,0 100%);filter:drop-shadow(0 7px 6px rgba(64,39,18,.2));transform:rotate(-2deg);transition:width .2s,min-height .2s,transform .2s}
 .discussion-note:before{content:"";position:absolute;right:0;top:0;width:23px;height:20px;background:#e4d267;clip-path:polygon(0 0,100% 100%,0 100%)}
