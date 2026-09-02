@@ -88,7 +88,7 @@
 .carousel-nav div{display:flex;gap:4px}
 .carousel-nav div button{position:relative;width:auto;height:auto;padding:12px 18px;border:0;border-radius:999px;background:transparent;color:rgba(255,255,255,.82);font-size:14px;font-weight:700;line-height:1;white-space:nowrap;transition:.3s background,.3s color,.3s transform}
 .carousel-nav div button:before{content:"";display:inline-block;width:7px;height:7px;margin-right:9px;border-radius:50%;background:currentColor;vertical-align:1px}
-.carousel-nav div button.active{width:auto;border-radius:999px;background:var(--hero1);color:#fff;transform:none}
+.carousel-nav div button.active{width:auto;border:2px solid #fff;border-radius:999px;background:var(--hero1);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);transform:none}
 @media(max-width:800px){.hero-bottom{grid-template-columns:1fr}.primary-cta{justify-self:center}.carousel-nav{grid-column:1;justify-self:center;max-width:100%;overflow-x:auto}.carousel-nav div button{padding:10px 13px;font-size:12px}.carousel-nav div button:before{margin-right:6px}}
 
 /* Keep navigation outside the hero frame and aware of the current section. */
@@ -255,11 +255,11 @@
 .project-console>.project-selector{grid-column:2;grid-row:2;min-height:0}
 @media(max-width:800px){.project-console>.section-heading{order:-2;padding:20px 16px}.project-console>.section-heading h2{font-size:clamp(40px,12vw,58px)}.project-console>.project-selector{order:-1}}
 
-/* Navigation: white active tab with a glass capsule fading at its base. */
-.nav-links{position:relative;border-bottom-color:transparent;background:linear-gradient(to bottom,rgba(255,255,255,.66) 0%,rgba(255,255,255,.34) 68%,rgba(255,255,255,0) 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 15px 28px rgba(17,19,41,.08);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%)}
+/* Navigation: one even glass capsule with no directional fade. */
+.nav-links{position:relative;border-color:rgba(255,255,255,.72);background:rgba(255,255,255,.38);box-shadow:inset 0 1px 0 rgba(255,255,255,.78),0 15px 28px rgba(17,19,41,.08);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%)}
 .nav-links a{transition:background .25s,color .25s,box-shadow .25s}
 .nav-links a.is-active,.dark .nav-links a.is-active{border:1px solid rgba(255,255,255,.92);background:#fff;color:#111329;box-shadow:inset 0 1px 0 #fff,0 8px 20px rgba(17,19,41,.12)}
-.dark .nav-links{border-bottom-color:transparent;background:linear-gradient(to bottom,rgba(255,255,255,.2) 0%,rgba(255,255,255,.09) 68%,rgba(255,255,255,0) 100%)}
+.dark .nav-links{border-color:rgba(255,255,255,.26);background:rgba(10,11,27,.42)}
 
 /* Compact white Work With Me section. */
 .contact-section{gap:30px;padding:46px 5vw;background:#fff;color:#111329}
