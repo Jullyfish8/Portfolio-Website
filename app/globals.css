@@ -315,6 +315,6 @@ body{overflow-x:hidden}
 @media(max-width:800px){.hero-bottom{margin-top:-14px}.carousel-nav div button{font-size:14px}}
 
 /* Portfolio editorial typography. */
-.project-console>.section-heading h2{letter-spacing:-.035em}
+.project-console>.section-heading h2,.case-reader h3{letter-spacing:-.045em}
 .case-intro{font-family:Arial,Helvetica,sans-serif}
 .case-copy .copy-label{margin:0 0 18px;font-family:Arial,Helvetica,sans-serif;font-size:clamp(27px,3vw,44px);font-weight:700;line-height:1.12;letter-spacing:-.035em;text-transform:capitalize}
