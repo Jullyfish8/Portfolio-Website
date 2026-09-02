@@ -209,10 +209,12 @@
 .board-zone-label{position:absolute;top:12px;display:flex;z-index:4;flex-direction:column;gap:2px;padding:7px 10px;border-radius:9px;background:rgba(255,249,231,.9);color:#2c241d;box-shadow:0 3px 8px rgba(55,32,16,.13);pointer-events:none}
 .board-zone-label strong{font-size:12px}.board-zone-label span{font-size:10px}.board-zone-stickers{left:12px}.board-zone-notes{left:calc(66.666% + 12px)}
 .board-instruction{display:none}
-.interest-sticker{width:82px;min-height:78px;padding:0;border-width:2px;border-radius:16px;background:#fff9ee;overflow:hidden}
+.interest-sticker{width:104px;min-height:104px;padding:4px 5px 8px;border-width:2px;border-radius:16px;background:#fff9ee;overflow:hidden}
 .interest-sticker:before{width:7px;height:7px;top:3px;z-index:2}
-.interest-sticker .sticker-art{display:block;width:100%;height:78px;object-fit:contain;pointer-events:none;user-select:none}
-.interest-sticker small{display:none}
+.interest-sticker .sticker-art{display:flex;align-items:center;justify-content:center;width:100%;height:72px;pointer-events:none;user-select:none}
+.interest-sticker .sticker-art img{display:block;width:100%;height:100%;object-fit:contain}
+.interest-sticker .sticker-art.is-composite img{width:58%;margin:0 -5%}
+.interest-sticker small{display:block;min-height:18px;color:#262019;font:700 9px/1.05 Arial,Helvetica,sans-serif;text-align:center;text-wrap:balance}
 .discussion-note{position:absolute;z-index:3;width:125px;min-height:92px;padding:24px 13px 13px;border:0;background:#fff29a;color:#332b1f;text-align:left;font:700 11px/1.25 Arial,Helvetica,sans-serif;cursor:grab;touch-action:none;clip-path:polygon(0 0,82% 0,100% 20%,100% 100%,0 100%);filter:drop-shadow(0 7px 6px rgba(64,39,18,.2));transform:rotate(-2deg);transition:width .2s,min-height .2s,transform .2s}
 .discussion-note:before{content:"";position:absolute;right:0;top:0;width:23px;height:20px;background:#e4d267;clip-path:polygon(0 0,100% 100%,0 100%)}
 .discussion-note:after{content:"•";position:absolute;left:50%;top:1px;color:#d84943;font-size:19px;line-height:1}
@@ -220,7 +222,7 @@
 .discussion-note.is-open{z-index:7;width:210px;min-height:132px;transform:rotate(0)}
 .discussion-note.is-dragging{z-index:9;cursor:grabbing;transform:rotate(3deg) scale(1.03)}
 .reset-board{z-index:12}
-@media(max-width:800px){.about-section{grid-template-columns:1fr;padding:14px;gap:18px}.about-copy{padding:4px}.about-copy h2{font-size:clamp(44px,13vw,62px)}.about-portrait{height:300px}.sticker-board{grid-column:1;min-height:680px}.board-divider{left:0;right:0;top:65%;bottom:auto;border-left:0;border-top:2px dashed rgba(78,46,23,.24)}.board-zone-notes{left:12px;top:calc(65% + 10px)}.interest-sticker{width:72px;min-height:69px}.interest-sticker .sticker-art{height:69px}.discussion-note{width:110px;min-height:82px}.discussion-note.is-open{width:190px}.reset-board{bottom:10px;right:10px}}
+@media(max-width:800px){.about-section{grid-template-columns:1fr;padding:14px;gap:18px}.about-copy{padding:4px}.about-copy h2{font-size:clamp(44px,13vw,62px)}.about-portrait{height:300px}.sticker-board{grid-column:1;min-height:680px}.board-divider{left:0;right:0;top:65%;bottom:auto;border-left:0;border-top:2px dashed rgba(78,46,23,.24)}.board-zone-notes{left:12px;top:calc(65% + 10px)}.interest-sticker{width:88px;min-height:92px}.interest-sticker .sticker-art{height:60px}.interest-sticker small{font-size:8px}.discussion-note{width:110px;min-height:82px}.discussion-note.is-open{width:190px}.reset-board{bottom:10px;right:10px}}
 
 /* Contact invitation and direct channels. */
 .contact-section{min-height:0;display:grid;grid-template-columns:1fr;gap:48px;align-items:center;padding:72px 5vw;background:linear-gradient(135deg,#ff4ca4,#ff9fca);text-align:left}
