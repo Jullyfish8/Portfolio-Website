@@ -343,3 +343,26 @@ body{overflow-x:hidden}
   .project-filters button{font-size:11px}
   .case-pane .case-reader{padding-top:18px}
 }
+
+/* Place article images before, beside, or after any paragraph. */
+.image-thumbnail-card{width:280px!important}
+.image-layout-controls{grid-template-columns:repeat(2,minmax(0,1fr))}
+.image-layout-controls .placement-control{grid-column:1/-1}
+.preview-flow,.published-flow{display:flow-root}
+.preview-flow>p,.published-flow>p{margin:0 0 1.35em;white-space:pre-wrap;font-size:18px;line-height:1.65}
+.preview-flow .preview-image,.published-flow>img{display:block;height:auto;min-height:0;max-height:none;margin-top:24px;margin-bottom:24px;object-fit:contain;border-radius:18px}
+.published-flow>img{border:1px solid var(--line)}
+.preview-flow .size-small,.published-flow>.size-small{width:34%}
+.preview-flow .size-medium,.published-flow>.size-medium{width:62%}
+.preview-flow .size-full,.published-flow>.size-full{width:100%}
+.preview-flow .align-left,.published-flow>.align-left{margin-left:0;margin-right:auto}
+.preview-flow .align-center,.published-flow>.align-center{margin-left:auto;margin-right:auto}
+.preview-flow .align-right,.published-flow>.align-right{margin-left:auto;margin-right:0}
+.preview-flow .placement-paragraph.align-left:not(.size-full),.published-flow>.placement-paragraph.align-left:not(.size-full){float:left;margin:0 24px 18px 0}
+.preview-flow .placement-paragraph.align-right:not(.size-full),.published-flow>.placement-paragraph.align-right:not(.size-full){float:right;margin:0 0 18px 24px}
+@media(max-width:700px){
+  .image-thumbnail-card{width:100%!important}
+  .preview-flow .size-small,.published-flow>.size-small{width:55%}
+  .preview-flow .size-medium,.published-flow>.size-medium{width:82%}
+  .preview-flow .placement-paragraph,.published-flow>.placement-paragraph{float:none!important;margin:20px auto!important}
+}
