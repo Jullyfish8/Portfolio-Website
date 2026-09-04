@@ -396,3 +396,16 @@ body{overflow-x:hidden}
 @media(max-width:800px){.role-details{top:calc(42% + min(28vw,130px) + 20px);gap:10px}.paper-title{font-size:12px}.paper-authors{font-size:8px}.paper-abstract{font-size:9px}.paper-lines i{height:2px;margin:4px 0}.paper-cursor{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.paper-title,.paper-authors,.paper-abstract,.paper-lines,.paper-cursor{animation:none}.paper-title{left:50%;top:14%;transform:translateX(-50%)}.paper-authors{left:50%;top:32%;transform:translateX(-50%)}.paper-abstract{left:14%;top:50%}.paper-lines{left:14%;top:60%}.paper-cursor{display:none}}
 @media(prefers-reduced-motion:reduce){.ui-image-card,.moving-step,.ui-cursor,.instruction-cursor{animation:none}.ui-image-card{left:62%;top:43%;transform:none}.moving-step{left:50%;top:-4px;transform:translateX(-50%)}.ui-cursor,.instruction-cursor{display:none}}
+
+/* Stack the hero content in a stable reading order without overlap. */
+.hero{display:flex;flex-direction:column;align-items:stretch}
+.hero-heading{flex:0 0 auto}
+.hero>.carousel-nav{flex:0 0 auto;align-self:center;margin:18px auto 10px}
+.hero-stage{flex:1 0 430px;height:auto;min-height:430px;margin:0}
+.hero-bottom{flex:0 0 auto;margin:0 0 10px}
+.role-orbit{top:39%}
+.role-details{top:calc(39% + min(11vw,155px) + 20px);gap:9px}
+.role-details .role-title{font-size:clamp(30px,3.1vw,48px);line-height:1}
+.role-details .role-meta{font-size:17px;letter-spacing:.035em;text-transform:none}
+.hero>.carousel-nav div button,.hero-actions .primary-cta,.hero-actions .resume-link{font-size:13px}
+@media(max-width:800px){.hero>.carousel-nav{max-width:100%;margin:14px auto 4px}.hero>.carousel-nav div button{padding:9px 10px;font-size:10px}.hero-stage{flex-basis:390px;min-height:390px}.role-orbit{top:38%;width:min(54vw,245px)}.role-details{top:calc(38% + min(27vw,122px) + 16px);gap:7px}.role-details .role-title{font-size:clamp(28px,8vw,40px)}.role-details .role-meta{display:block;font-size:14px}.hero-bottom{margin-bottom:8px}.hero-actions .primary-cta,.hero-actions .resume-link{font-size:10px}}
