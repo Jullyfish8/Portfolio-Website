@@ -24,10 +24,10 @@ const stickerRecipes:Record<string,{type:string,label:string,images:string[]}> =
   'book+speech':{type:'diverse-learning-community',label:'Diverse Learning Community',images:['/stickers/story-circle.png']},
   'book+book':{type:'inclusive-library',label:'Inclusive Library',images:['/stickers/library.png']},
   'nature+nature':{type:'nature-hub',label:'Nature Hub',images:['/stickers/nature-hub.png']},
-  'ai+nature':{type:'futuristic-learning-space',label:'Futuristic Learning Space',images:['/stickers/nature.png','/stickers/ai.png']},
+  'ai+nature':{type:'futuristic-learning-space',label:'Futuristic Learning Space',images:['/stickers/futuristic-learning-space.png']},
   'nature+speech':{type:'cultural-exchange-spring',label:'Cultural Exchange Spring',images:['/stickers/cultural-exchange-sites.png']},
   'ai+ai':{type:'agentic-ai',label:'Agentic AI',images:['/stickers/agentic-ai.png']},
-  'ai+speech':{type:'ai-conversation-partner',label:'AI Conversation Partner',images:['/stickers/ai.png','/stickers/speech.png']},
+  'ai+speech':{type:'ai-conversation-partner',label:'AI Conversation Partner',images:['/stickers/ai-conversation-partner.png']},
   'speech+speech':{type:'social-connection',label:'Social Connection',images:['/stickers/connection.png']},
 };
 const initialNotes = [
