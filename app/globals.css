@@ -436,3 +436,5 @@ body{overflow-x:hidden}
 
 /* Center the simplified navigation after removing peripheral controls. */
 .nav-shell{display:flex;align-items:center;justify-content:center}
+
+.hero-heading .hero-intro{max-width:760px;margin:20px auto 0;line-height:1.45;text-wrap:balance}
