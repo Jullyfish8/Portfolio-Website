@@ -475,3 +475,10 @@ body{overflow-x:hidden}
 /* Preserve italic and lowercase glyph overhangs at clipped edges. */
 .contact-section .contact-intro h2 em{padding:.04em .16em .14em;margin:-.04em -.16em -.14em}
 .contact-section .contact-email a{padding-left:3px;margin-left:-3px}
+
+/* Keep every admin project row on the dark admin surface. */
+.admin-project{width:100%;margin-top:10px;border:1px solid #2c3040;border-radius:17px;background:#0d0f18;color:#f4f2eb;appearance:none;font:inherit;text-align:left;cursor:pointer}
+.admin-project:hover{border-color:#555b72;background:#151724}
+.admin-project:focus-visible{outline:3px solid rgba(167,152,255,.55);outline-offset:2px}
+.admin-project.featured{border-color:#6256a4;background:linear-gradient(90deg,rgba(112,88,255,.13),#0d0f18)}
+.admin-project>b{color:#f4f2eb}
