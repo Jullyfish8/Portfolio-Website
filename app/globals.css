@@ -452,3 +452,9 @@ body{overflow-x:hidden}
 .contact-email button{height:40px;padding:0 14px;border-radius:9px}
 .contact-section .contact-linkedin{padding:0 22px}
 @media(max-width:560px){.contact-section{gap:34px;padding:60px 20px}.contact-section .contact-intro h2{font-size:clamp(34px,10vw,48px)}.contact-section .contact-intro p br{display:none}.contact-buttons{width:100%;align-items:center}.contact-email,.contact-section .contact-linkedin{width:min(100%,340px);height:54px}.contact-section .contact-linkedin{justify-content:center}}
+
+/* Let portfolio frames follow each cover image without holographic effects. */
+.case-visual{height:auto;aspect-ratio:auto;background:transparent;isolation:auto}
+.case-visual:after,.case-visual .scanlines{display:none}
+.case-visual img{display:block;width:100%;height:auto;object-fit:contain;filter:none;transition:none;transform:none}
+.case-visual:hover img{transform:none}
