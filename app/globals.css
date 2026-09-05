@@ -463,3 +463,7 @@ body{overflow-x:hidden}
 .nav-links,.dark .nav-links{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .nav-links a.is-active,.dark .nav-links a.is-active,.nav-links a[href="#portfolio"].is-active,.dark .nav-links a[href="#portfolio"].is-active{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .nav-links a[href="#home"].is-active,.dark .nav-links a[href="#home"].is-active{border-color:rgba(255,255,255,.92);background:#fff;color:#111329;box-shadow:inset 0 1px 0 #fff}
+
+/* Preserve italic and lowercase glyph overhangs at clipped edges. */
+.contact-section .contact-intro h2 em{padding:.04em .16em .14em;margin:-.04em -.16em -.14em}
+.contact-section .contact-email a{padding-left:3px;margin-left:-3px}
