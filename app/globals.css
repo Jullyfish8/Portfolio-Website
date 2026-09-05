@@ -460,7 +460,7 @@ body{overflow-x:hidden}
 .case-visual:hover img{transform:none}
 
 /* Navigation glass and section-aware active state. */
-.nav-links,.dark .nav-links{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.nav-links,.dark .nav-links{background:rgba(255,255,255,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .nav-links a.is-active,.dark .nav-links a.is-active,.nav-links a[href="#portfolio"].is-active,.dark .nav-links a[href="#portfolio"].is-active{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .nav-links a[href="#home"].is-active,.dark .nav-links a[href="#home"].is-active{border-color:rgba(255,255,255,.92);background:#fff;color:#111329;box-shadow:inset 0 1px 0 #fff}
 
